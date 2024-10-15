@@ -2,7 +2,7 @@
 
     <h5>Alterar Cliente</h5>
 
-    <form action="/clientes/{{ $cliente->id }}" method="POST">
+    <form action="/cliente/{{ $cliente->id }}" method="POST">
         @csrf
         @method('PUT')
         <div class="row">

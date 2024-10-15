@@ -27,8 +27,8 @@
                     <td>{{ $cliente->CPF }}</td>
                     <td>{{ $cliente->telefone }}</td>
                     <td class="d-flex justify-content-center">
-                        <a href="/clientes/{{ $cliente->id }}/edit" class="btn btn-warning mx-2">Alterar</a>
-                        <form action="/clientes/{{ $cliente->id }}" method="POST" style="display:inline;">
+                        <a href="/cliente/{{ $cliente->id }}/edit" class="btn btn-warning mx-2">Alterar</a>
+                        <form action="/cliente/{{ $cliente->id }}" method="POST" style="display:inline;">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja excluir este cliente?')">Excluir</button>
