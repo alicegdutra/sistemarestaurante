@@ -11,6 +11,9 @@
             </a>
         </div>
 
+        <h5 class="text-center font-weight-bold mb-4" style="color: #4b3621;">Clientes Cadastrados</h5>
+
+
         <table class="table table-hover table-bordered text-center bg-light text-dark mt-4">
             <thead class="bg-secondary text-light">
                 <tr>

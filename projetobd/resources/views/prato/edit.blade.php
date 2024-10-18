@@ -33,6 +33,15 @@
                     <input type="text" name="categoria" id="categoria" class="form-control border rounded bg-white text-dark" value="{{ $prato->categoria }}" required />
                 </div>
             </div>
+            <div class="row mb-3">
+                <div class="col-md-6 offset-md-3">
+                    <label for="disponivel" class="form-label font-weight-bold" style="color: #4b3621;">Disponível:</label>
+                    <select name="disponivel" id="disponivel" class="form-control border rounded bg-white text-dark" required>
+                        <option value="1" {{ $prato->disponivel ? 'selected' : '' }}>Sim</option>
+                        <option value="0" {{ !$prato->disponivel ? 'selected' : '' }}>Não</option>
+                    </select>
+                </div>
+            </div>
 
             <div class="row">
                 <div class="col-md-6 offset-md-3 text-center">
