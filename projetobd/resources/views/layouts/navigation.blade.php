@@ -71,6 +71,7 @@
             <x-nav-link :href="route('prato.index')" :active="request()->routeIs('prato.index')"> 
                 {{ __('Pratos') }} 
             </x-nav-link>
+            
         </div>
 
         <div class="pt-4 pb-1 border-t border-gray-200 dark:border-gray-600">
