@@ -2,13 +2,8 @@
 
     <div class="container mt-4">
         <div class="d-flex justify-content-between mb-4">
-            <a class="btn btn-success btn-lg" href="{{ route('cliente.index') }}">
-                Gerenciar Cliente
-            </a>
-
-            <a class="btn btn-success btn-lg" href="{{ route('cliente.create') }}">
-                Inserir novo Cliente
-            </a>
+            <a class="btn btn-success btn-lg" href="{{ route('cliente.index') }}">Gerenciar Cliente</a>
+            <a class="btn btn-success btn-lg" href="{{ route('cliente.create') }}">Inserir novo Cliente</a>
         </div>
 
         <h5 class="text-center font-weight-bold mb-4" style="color: #4b3621;">Clientes Cadastrados</h5>
