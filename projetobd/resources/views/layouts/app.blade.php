@@ -94,7 +94,10 @@
                     <a class="nav-link" href="/cliente">Clientes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/prato">Prato</a>
+                    <a class="nav-link" href="/prato">Pratos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/mesa">Mesas</a>
                 </li>
             </ul>
             <ul class="navbar-nav ms-auto">

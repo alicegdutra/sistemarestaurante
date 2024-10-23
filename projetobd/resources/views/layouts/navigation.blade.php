@@ -71,6 +71,9 @@
             <x-nav-link :href="route('prato.index')" :active="request()->routeIs('prato.index')"> 
                 {{ __('Pratos') }} 
             </x-nav-link>
+            <x-nav-link :href="route('mesa.index')" :active="request()->routeIs('mesa.index')"> 
+                {{ __('Mesas') }} 
+            </x-nav-link>
             
         </div>
 
@@ -97,4 +100,4 @@
             </div>
         </div>
     </div>
-</nav>  adicione pratos a navigartion
+</nav> 
