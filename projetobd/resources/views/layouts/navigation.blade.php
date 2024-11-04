@@ -74,6 +74,9 @@
             <x-nav-link :href="route('mesa.index')" :active="request()->routeIs('mesa.index')"> 
                 {{ __('Mesas') }} 
             </x-nav-link>
+            <x-nav-link :href="route('pedido.index')" :active="request()->routeIs('pedido.index')"> 
+                {{ __('Pedidos') }} 
+            </x-nav-link>
             
         </div>
 

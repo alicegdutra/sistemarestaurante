@@ -99,6 +99,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/mesa">Mesas</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pedido">Pedidos</a>
+                </li>
             </ul>
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item dropdown">

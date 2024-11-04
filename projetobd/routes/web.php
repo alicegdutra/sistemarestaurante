@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\PratoController;
 use App\Http\Controllers\MesaController;
+use App\Http\Controllers\PedidoController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -21,6 +22,8 @@ Route::middleware('auth')->group(function () {
     Route::resource('cliente', ClienteController::class);
     Route::resource('prato', PratoController::class);
     Route::resource('mesa', MesaController::class);
+    Route::resource('pedido', PedidoController::class);
+
 
 
 });
