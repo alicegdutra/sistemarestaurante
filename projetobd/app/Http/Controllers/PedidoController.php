@@ -16,7 +16,7 @@ class PedidoController extends Controller
     public function index()
     {
         $pedidos = Pedido::with(['cliente', 'mesa', 'prato'])->get();
-        return view('pedido.index', compact('pedidos'));
+        return view('pedidos.index', compact('pedidos'));
     }
 
     /**
@@ -27,7 +27,7 @@ class PedidoController extends Controller
         $clientes = Cliente::all();
         $mesas = Mesa::all();
         $pratos = Prato::all();
-        return view('pedido.create', compact('clientes', 'mesas', 'pratos'));
+        return view('pedidos.create', compact('clientes', 'mesas', 'pratos'));
     }
 
     /**
@@ -54,7 +54,7 @@ class PedidoController extends Controller
     public function show(string $id)
     {
         $pedido = Pedido::with(['cliente', 'mesa', 'prato'])->findOrFail($id);
-        return view('pedido.show', compact('pedido'));
+        return view('pedidos.show', compact('pedido'));
     }
 
     /**
@@ -66,7 +66,7 @@ class PedidoController extends Controller
         $clientes = Cliente::all();
         $mesas = Mesa::all();
         $pratos = Prato::all();
-        return view('pedido.edit', compact('pedido', 'clientes', 'mesas', 'pratos'));
+        return view('pedidos.edit', compact('pedido', 'clientes', 'mesas', 'pratos'));
     }
 
     /**
