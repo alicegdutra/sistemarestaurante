@@ -74,6 +74,12 @@
         .btn-danger:hover {
             background-color: #e6bea5 !important;
         }
+
+        .navbar-logo {
+            width: 90px;
+            height: auto;
+            margin-right: 8px;
+        }
     </style>
 </head>
 <body>
@@ -81,7 +87,10 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/dashboard">Coffee&Book</a>
+        <a class="navbar-brand d-flex align-items-center" href="/dashboard">
+            <img src="{{ asset('logo.png') }}" alt="Logo" class="navbar-logo">
+            Coffee&Book
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -113,7 +122,7 @@
                         <li><hr class="dropdown-divider"></li>
                         <li>
                             <form action="/logout" method="POST">
-                                @CSRF
+                                @csrf
                                 <button type="submit" class="dropdown-item">Sair</button>
                             </form>
                         </li>

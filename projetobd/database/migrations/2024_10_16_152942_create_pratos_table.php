@@ -14,10 +14,10 @@ return new class extends Migration
         Schema::create('pratos', function (Blueprint $table) {
             $table->id();
             $table->string('nome', 255);
-            $table->text('descricao')->nullable(); // Descrição do prato (opcional)
+            $table->text('descricao')->nullable();
             $table->decimal('preco', 8, 2);
             $table->string('categoria', 100); 
-            $table->boolean('disponivel')->default(true); // Disponibilidade do prato (true por padrão)
+            $table->boolean('disponivel')->default(true);
             $table->timestamps();
         });
     }

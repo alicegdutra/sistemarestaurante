@@ -24,7 +24,7 @@
                         <td>{{ $pedido->cliente->nome }}</td>
                         <td>{{ $pedido->mesa->numero }}</td>
                         <td>{{ $pedido->prato->nome }}</td>
-                        <td>{{ $pedido->data_pedido }}</td>
+                        <td>{{ \Carbon\Carbon::parse($pedido->data_pedido)->format('d/m/Y') }}</td>
                         <td class="d-flex justify-content-center">
                             <a href="/pedido/{{ $pedido->id }}/edit" class="btn btn-warning mx-2">Alterar</a>
                             <form action="/pedido/{{ $pedido->id }}" method="POST" style="display:inline;">
