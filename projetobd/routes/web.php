@@ -23,9 +23,6 @@ Route::middleware('auth')->group(function () {
     Route::resource('prato', PratoController::class);
     Route::resource('mesa', MesaController::class);
     Route::resource('pedido', PedidoController::class);
-
-
-
 });
 
 require __DIR__.'/auth.php';
